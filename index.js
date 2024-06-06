@@ -1,3 +1,14 @@
-document.querySelector("h2").textContent= "hello, Abdalruhman";
+var body = document.querySelector("body");
+var bigfontBtn = document.querySelector(".bigFontBtn");
+var normalFontBtn = document.querySelector(".normalFontBtn");
 
-document.querySelector(".userInfo").classList.add("dark");
+function bigfont() {
+  body.classList.add("big");
+}
+
+function normalfont() {
+  body.classList.remove("big");
+}
+bigfontBtn.onclick = bigfont;
+
+normalFontBtn.onclick = normalfont;
