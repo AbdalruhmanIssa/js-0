@@ -1,14 +1,6 @@
-var body = document.querySelector("body");
-var bigfontBtn = document.querySelector(".bigFontBtn");
-var normalFontBtn = document.querySelector(".normalFontBtn");
-
-function bigfont() {
-  body.classList.add("big");
-}
-
-function normalfont() {
-  body.classList.remove("big");
-}
-bigfontBtn.onclick = bigfont;
-
-normalFontBtn.onclick = normalfont;
+var data="";
+var arr=["c++","javascript","python"];
+for(var i= 0;i <3; i++){
+  data+=`<li>${arr[i]}</li>`;
+} 
+document.querySelector("ul").innerHTML=data;
