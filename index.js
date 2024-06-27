@@ -13,13 +13,14 @@ function printData() {
   var currencySelect = document.querySelector(".currencySelect");
   var selectedCurrency = currencySelect.value;
   if (selectedCurrency === "dollar") {
-    console.log(users[0].element * 3.5);
+document.querySelector('p').textContent=`from Dollar to nis is:${users[0].element * 3.5}`;
   }
  else if (selectedCurrency === "dinar") {
     console.log(users[0].element * 5);
+document.querySelector('p').textContent=`from Dinar to nis is:${users[0].element * 5}`;
   }
   else if (selectedCurrency === "nis") {
-    console.log(users[0].element);
+    document.querySelector('p').textContent=`it still the same at:${users[0].element }`;
+
   }
 }
-console.log(users);
